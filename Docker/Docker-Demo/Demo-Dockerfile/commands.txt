@@ -1,0 +1,16 @@
+Build:
+docker build -t website .
+
+Show:
+docker images
+
+Run:
+docker run -p 3000:3000 website
+
+
+New Terminal:
+docker ps
+
+Stop docker:
+docker stop <id>
+
