@@ -24,13 +24,13 @@ During this exercise you will create a dev container in Visual Studio Code and c
 
 1. Open the command palette (Ctrl+Shift+P)
 2. Select `Terminal: Create New Integrated Terminal`
-3. Run `npx create-react-app my-app`
-4. Run `cd my-app`
+3. Run `npx create-react-app react-app`
+4. Run `cd react-app`
 5. Run `npm start`
 
 ## Modify React App
 
-1. Open the file `my-app/src/App.js`
+1. Open the file `react-app/src/App.js`
 2. Modify the text inside the `<p>` tag
 3. Save the file
 4. Refresh the browser to see the changes
