@@ -1,3 +1,5 @@
+# Docker compose with best practices
+
 services:
   frontend:
     restart: always
@@ -37,6 +39,6 @@ networks:
   react-express:
   express-mongo:
 
+
 # It is not needed to split services into different networks,
 # but its a good practice to do so.
-# You can run all in the same network and it will be fine.

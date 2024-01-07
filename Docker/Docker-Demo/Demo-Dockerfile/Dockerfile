@@ -1,7 +1,8 @@
 # Basisimage für Container
-FROM node:12-slim
+FROM node:lts-alpine3.19
 
 # Manuelle Installation von Node.js
+# From ubuntu:latest
 # apt-get update
 # apt-get install curl
 # # get install script and pass it to execute: 
