@@ -4,7 +4,7 @@ services: # Definiert die zu startenden Services (Container)
   backend: # Name des ersten Services
     container_name: backend # Definiert den Namen des Containers
     hostname: backend # Definiert den Hostname des Containers
-    restart: always # Definiert, dass der Container immer neu gestartet werden soll
+    restart: unless-stopped # Neu starten, wenn der Container nicht gestoppt wurde
     build: # Definiert den Build-Prozess
       context: ./backend # Pfad zum Dockerfile
       dockerfile: Dockerfile # Name des Dockerfiles
@@ -17,7 +17,7 @@ services: # Definiert die zu startenden Services (Container)
 
   postgres: # Name des zweiten Services
     image: postgres:latest # Definiert zu verwendendes Image
-    restart: always # Definiert, dass der Container immer neu gestartet werden soll
+    restart: unless-stopped
     volumes: # Definiert Volumes, die gemountet werden sollen
       - ./postgres-data:/var/lib/postgresql/data # Persistiert Datenbankdaten
     environment: # Definiert Umgebungsvariablen
@@ -25,9 +25,9 @@ services: # Definiert die zu startenden Services (Container)
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: postgres
     ports:
-      - '5432:5432' # Leitet Port 5432 des Containers auf Port 5432 des Hosts weiter
+      - '5432:5432'
     networks:
-      - database # Verbindet den Service mit dem Netzwerk "database"
+      - database
 
 networks: # Definiert Netzwerke, die von den Services genutzt werden
   database: # Name des Netzwerks
