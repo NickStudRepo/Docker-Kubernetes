@@ -10,4 +10,4 @@ Solutions can also be found in the respective folders.
 - [Solution Scaling](Solution-Scaling/)
 - [Exercise Rolling Update Rollback](Exercise-Rolling-Update-Rollback/)
 - [Solution Rolling Update Rollback](Solution-Rolling-Update-Rollback/)
-- [Exercise Portainer](Exercise-Portainer/)
+- [Exercise Helm Portainer](Exercise-Helm-Portainer/)

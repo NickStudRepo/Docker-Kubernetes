@@ -24,4 +24,4 @@ Solutions can also be found in the respective folders.
 - [Solution Scaling](Kubernetes-Exercise/Solution-Scaling/)
 - [Exercise Rolling Update Rollback](Kubernetes-Exercise/Exercise-Rolling-Update-Rollback/)
 - [Solution Rolling Update Rollback](Kubernetes-Exercise/Solution-Rolling-Update-Rollback/)
-- [Exercise Portainer](Kubernetes-Exercise/Exercise-Portainer/)
+- [Exercise Helm Portainer](Kubernetes-Exercise/Exercise-Helm-Portainer/)
