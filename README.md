@@ -10,10 +10,10 @@ Lecturers: [Philipp Weber](mailto:philipp.weber@stud.th-rosenheim.de), [Nick Sch
 
 ## Presentation
 
-You can find the slides in PPTX and PDF format.
+You can find the slides in PPTX and PDF format within the folder `Slides`.
 
-- [Data_Processing_Docker_Kubernetes.pptx](Data_Processing_Docker_Kubernetes.pptx)
-- [Data_Processing_Docker_Kubernetes.pdf](Data_Processing_Docker_Kubernetes.pdf)
+- [Data_Processing_Docker_Kubernetes.pptx](Slides/Data_Processing_Docker_Kubernetes.pptx)
+- [Data_Processing_Docker_Kubernetes.pdf](Slides/Data_Processing_Docker_Kubernetes.pdf)
 
 ---
 
