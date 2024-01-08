@@ -16,4 +16,10 @@ The Demo folder contains files and projects shown during the presentation.
 
 The Exercise folder contains files and projects for the exercises. Each exercise has its own folder and README.md file with instructions.
 
+Solutions can also be found in the respective folders.
+
+- [Exercise Simple Pod](Kubernetes-Exercise/Exercise-Simple-Pod/)
+- [Solution Simple Pod](Kubernetes-Exercise/Solution-Simple-Pod/)
+- [Exercise Scaling](Kubernetes-Exercise/Exercise-Scaling/)
+- [Solution Scaling](Kubernetes-Exercise/Solution-Scaling/)
 - [Exercise Portainer](Kubernetes-Exercise/Exercise-Portainer/)
