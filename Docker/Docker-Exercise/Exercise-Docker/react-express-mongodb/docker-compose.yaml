@@ -1,1 +1,10 @@
-# TODO
+
+services:
+  frontend:
+    # TODO
+
+  backend:
+    # TODO
+
+  mongo:
+    # TODO

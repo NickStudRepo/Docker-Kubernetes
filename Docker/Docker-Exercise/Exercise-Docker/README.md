@@ -13,12 +13,17 @@ Der Ordner react-express-mongodb enthält ein fertiges Code-Projekt. Wie der Nam
 
 ### Frontend (React-Service)
 
-Erstelle ein Dockerfile für den React-Service. ([Frontend Dockerfile](./react-express-mongodb/frontend/Dockerfile))
+Erstelle ein Dockerfile für den React-Service. 
+([Frontend Dockerfile](./react-express-mongodb/frontend/Dockerfile))
+
+- Das React Frontend läuft auf Port 3000
 
 
 ### Backend (Express-Service)
 
 Erstelle ein Dockerfile für den Express-Service. ([Backend Dockerfile](./react-express-mongodb/backend/Dockerfile))
+
+- Das Express Backend läuft auf Port 3000
 
 <details>
   <summary>Tipps (Aufbau Dockefile)</summary>
@@ -35,15 +40,28 @@ Erstelle ein Dockerfile für den Express-Service. ([Backend Dockerfile](./react-
 
 ## Aufgabe 2: Docker Compose Datei erstellen
 
-Erstelle eine Docker Compose Datei, um alle Services als Container zu starten. ([docker-compose.yaml](./react-express-mongodb/docker-compose.yaml) )
+Erstelle eine Docker Compose Datei, um alle Services als Container zu starten. ([docker-compose.yaml](./react-express-mongodb/docker-compose.yaml))
+
+Die Einstellung ("proxy": "http://backend:3000/") in der package.json des Frontend Service ermöglicht es dem Frontend, Anfragen nahtlos an den Backend Service weiterzuleiten, indem das interne Netzwerk von Docker Compose genutzt wird. Dadurch muss der Port vom Backend nicht nach außen geleitet werden.
+
+### Frontend 
+
+- Das Frontend mapped seinen Port 3000 nach außen, um außerhalb des Containers erreichbar zu sein
+- Das Frontend startet nach dem Backend
+
+### Backend
+
+- Das Backend startet nach der Datenbank
+
+### DB
+
+- MongoDB benötigt ein Volume, um Daten persistent zu speichern. "./data:/data/db"
 
 <details>
   <summary>Hinweise (Aufbau docker-compose)</summary>
 
-- Es müssen 3 Services definiert werden
-- Die MongoDB-Datenbank ist standardmäßig über Port 27017 erreichbar (Expose Port)
-- Die MongoDB benötigt ein Volume, um Daten persistent zu speichern. "./data:/data/db"
-- Der Backend-Service ist auf Port 3000 erreichbar (Expose Port)
-- Das Frontend mapped seinen Port 3000 nach außen, um außerhalb des Containers erreichbar zu sein
+- "context:" wird im build Abschnitt benötigt, um zu beschreiben, wo sich die Dockerfile befindet, mit der das Docker Image gebaut werden soll
+- Ein Beispielimage für MongoDB: (image: mongo:4.2.0)
+- "depends_on:" wird benötigt um Services nacheinander zu starten
 
 </details>
