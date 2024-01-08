@@ -6,7 +6,7 @@ In this exercise, you will create and start a simple pod in your Kubernetes clus
 
 #### Prerequisites
 
-- Kubernetes cluster (can be activated in Docker Desktop)
+- Kubernetes cluster (e.g., [Docker Desktop with Kubernetes enabled](https://docs.docker.com/desktop/kubernetes/), [Minikube](https://minikube.sigs.k8s.io/docs/start/))
 - [kubectl](https://kubernetes.io/docs/tasks/tools/) (included in Docker Desktop)
 
 #### Steps
