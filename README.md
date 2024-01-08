@@ -69,4 +69,6 @@ Solutions can also be found in the respective folders.
 - [Solution Simple Pod](Kubernetes/Kubernetes-Exercise/Solution-Simple-Pod/)
 - [Exercise Scaling](Kubernetes/Kubernetes-Exercise/Exercise-Scaling/)
 - [Solution Scaling](Kubernetes/Kubernetes-Exercise/Solution-Scaling/)
+- [Exercise Rolling Update Rollback](Kubernetes/Kubernetes-Exercise/Exercise-Rolling-Update-Rollback/)
+- [Solution Rolling Update Rollback](Kubernetes/Kubernetes-Exercise/Solution-Rolling-Update-Rollback/)
 - [Exercise Portainer](Kubernetes/Kubernetes-Exercise/Exercise-Portainer/)
