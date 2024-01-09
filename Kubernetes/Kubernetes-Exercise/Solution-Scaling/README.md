@@ -63,7 +63,15 @@ In this exercise, you will deploy a web application in Kubernetes using a Deploy
    kubectl scale deployment webapp-deployment --replicas=5
    ```
 
-5. **Check the Updated Deployment**:
+5. Check the rollout status of the deployment.
+
+   ```bash
+   kubectl rollout status deployment/webapp-deploymen
+   ```
+
+   Wait until you see the message `deployment "webapp-deployment" successfully rolled out`.
+
+6. **Check the Updated Deployment**:
    Verify the scaling operation.
 
    ```bash
@@ -72,7 +80,7 @@ In this exercise, you will deploy a web application in Kubernetes using a Deploy
 
    The `webapp-deployment` should now show 5 replicas.
 
-6. **Cleanup**:
+7. **Cleanup**:
    After completing the exercise, delete the deployment to free up resources.
 
    ```bash
