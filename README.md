@@ -58,6 +58,7 @@ The Demo folder contains files and projects shown during the presentation.
 
 - [Demo Kubernetes Cluster](Kubernetes/Kubernetes-Demo/Demo-Kubernetes-Cluster/)
 - [Demo Rolling Update](Kubernetes/Kubernetes-Demo/Demo-RollingUpdate/)
+- [Demo Pod Eviction](Kubernetes/Kubernetes-Demo/Demo-Pod-Eviction/)
 
 ### Kubernetes-Exercise
 
